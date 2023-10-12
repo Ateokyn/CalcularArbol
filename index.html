@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cálculo de LCI, LCE, MLCI y MLCE</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Árbol General</h1>
+        <div class="input-container">
+            <p>Ingresa el número de nodos en el árbol:</p>
+            <input type="number" id="numNodos" min="1" step="1" class="input-field">
+        </div>
+        <button onclick="calcular()" class="calculate-button">Calcular</button>
+
+        <div class="results-container">
+            <h2>Resultados:</h2>
+            <p>LCI (Longitud del Camino Interno): <span id="lciResult"></span></p>
+            <p>LCE (Longitud del Camino Externo): <span id="lceResult"></span></p>
+            <p>MLCI (Media de la Longitud del Camino Interno): <span id="mlciResult"></span></p>
+            <p>MLCE (Media de la Longitud del Camino Externo): <span id="mlceResult"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
